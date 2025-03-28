@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = 'JFC Astro Tut Blog'
 ---
 
 <html lang="en">
@@ -8,18 +8,27 @@
 
     <meta name="viewport" content="width=device-width" />
 
-    <title>JFC Astro Site Blog</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
  
-    <h1>JFC Astro Blog</h1>
+    <h1>{pageTitle}</h1>
     <h2>Astro Blog</h2>
     <p>
       Once you have tried this a few times you realize how much is available and
       will learn the routine. Keep going 😎
     </p>
+    <ul>
+     <li><a href="/posts/post-1">Post 1</a> </li>
+     <li>
+     <a href="/posts/post-2">Post 2</a>
+     </li>
+     <li>
+     <a href="/posts/post-3">Post 3</a>
+     </li>
+    </ul>
   </body>
 </html>
