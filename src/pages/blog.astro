@@ -1,4 +1,7 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import '../styles/global.css';
 const pageTitle = 'JFC Astro Tut Blog'
 ---
 
@@ -11,10 +14,8 @@ const pageTitle = 'JFC Astro Tut Blog'
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
- 
+<Header/>
+
     <h1>{pageTitle}</h1>
     <h2>Astro Blog</h2>
     <p>
@@ -30,5 +31,6 @@ const pageTitle = 'JFC Astro Tut Blog'
      <a href="/posts/post-3">Post 3</a>
      </li>
     </ul>
+    <Footer/>
   </body>
 </html>
