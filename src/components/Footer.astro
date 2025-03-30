@@ -1,8 +1,15 @@
 ---
-const github = "github";
-const twitch = "twitch"
-const username = "ulu969";
+const github = 'github';
+const twitch = 'twitch';
+const username = 'ulu969';
 ---
+
 <footer>
-  <p>Learn more about my projects on <a href={`https://www.${github}.com/${username}`}>{github} </a> or <a href={`https://www.${twitch}.com/${username}`}>{twitch} </a>  </p>
+  <p style="margin: 1px">
+    Learn more about my projects on
+    <div class="nav-links">
+      <a href={`https://www.${github}.com/${username}`}>{github} </a>
+      <a href={`https://www.${twitch}.com/${username}`}>{twitch} </a>
+    </div>
+  </p>
 </footer>
